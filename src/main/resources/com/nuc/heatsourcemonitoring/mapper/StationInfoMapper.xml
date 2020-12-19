@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.nuc.heatsourcemonitoring.mapper.StationInfoMapper">
+  <resultMap id="BaseResultMap" type="com.nuc.heatsourcemonitoring.pojo.StationInfo">
+    <!--@mbg.generated-->
+    <!--@Table station_info-->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="station_name" jdbcType="VARCHAR" property="stationName" />
+    <result column="station_state" jdbcType="VARCHAR" property="stationState" />
+    <result column="station_address" jdbcType="VARCHAR" property="stationAddress" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    id, station_name, station_state, station_address
+  </sql>
+</mapper>

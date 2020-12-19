@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.nuc.heatsourcemonitoring.mapper.HeatRecordMapper">
+  <resultMap id="BaseResultMap" type="com.nuc.heatsourcemonitoring.pojo.HeatRecord">
+    <!--@mbg.generated-->
+    <!--@Table heat_record-->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="time" jdbcType="TIMESTAMP" property="time" />
+    <result column="one_supply_temperature" jdbcType="FLOAT" property="oneSupplyTemperature" />
+    <result column="once_temperature" jdbcType="FLOAT" property="onceTemperature" />
+    <result column="one_supply_pressure" jdbcType="FLOAT" property="oneSupplyPressure" />
+    <result column="pressure_once" jdbcType="FLOAT" property="pressureOnce" />
+    <result column="two_supply_temperature" jdbcType="FLOAT" property="twoSupplyTemperature" />
+    <result column="twice_temperature" jdbcType="FLOAT" property="twiceTemperature" />
+    <result column="two_supply_pressure" jdbcType="FLOAT" property="twoSupplyPressure" />
+    <result column="pressure_twice" jdbcType="FLOAT" property="pressureTwice" />
+    <result column="instantaneous_traffic" jdbcType="FLOAT" property="instantaneousTraffic" />
+    <result column="instantaneous_heat" jdbcType="FLOAT" property="instantaneousHeat" />
+    <result column="electric_valve_opening" jdbcType="FLOAT" property="electricValveOpening" />
+    <result column="circulating_pump_frequency" jdbcType="FLOAT" property="circulatingPumpFrequency" />
+    <result column="makeup_pump_frequency" jdbcType="FLOAT" property="makeupPumpFrequency" />
+    <result column="heat_exchange_station" jdbcType="VARCHAR" property="heatExchangeStation" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    id, `time`, one_supply_temperature, once_temperature, one_supply_pressure, pressure_once, 
+    two_supply_temperature, twice_temperature, two_supply_pressure, pressure_twice, instantaneous_traffic, 
+    instantaneous_heat, electric_valve_opening, circulating_pump_frequency, makeup_pump_frequency, 
+    heat_exchange_station
+  </sql>
+</mapper>
